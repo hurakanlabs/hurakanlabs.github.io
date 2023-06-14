@@ -3,28 +3,90 @@
     <head>
         <meta charset="UTF-8" />
         <title>Hurakan Labs</title>
-        <link rel="icon" type="image/x-icon" href="/assets/fav.png">
+        <link rel="icon" type="image/x-icon" href="/assets/fav.png" />
     </head>
-<style>
-	html { 
-  background-color: #acbddc;
-font-family: Arial;
-          position: relative;
+    <style>
+        html {
+            background-color: #acbddc;
+            font-family: Arial;
+            position: relative;
 
-  margin: 0 auto;
-  padding-top: 30%;
-        width: 100%;
-  resize: both;
-  overflow: auto;
-        color: #f2ebd8;
-        font-size: 150%;
-        text-align: center;
+            margin: 0 auto;
+
+            width: 100%;
+            resize: both;
+            overflow: auto;
+            color: #f2ebd8;
+            font-size: 150%;
+            text-align: center;
+        }
+    </style>
+
+    
+
+    <body>
+        <style>
+
+    .mainmodel {
+      width: 100vw;
+      height: 80vh;
+      margin: 0 auto;
+      border-color: transparent;
+      outline: none;
+      padding: 0;
+    }
+    
+    /* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 520px) {
+/* Styles */
+.mainmodel{
+height: 50vh;
 }
-</style>
-    
-    <img src="/assets/wearehere.jpg" alt="HURAKAN" style="width:500px; border-radius: 5%;">
-    
-    <body><h2>WELCOME TO<br>HURAKAN LABS</h2></body>
-    
+.image-gallery{
+padding-top: 20%;
+}
+}
+   
+
+    body {
+      font-family: helvetica;
+      width: 100vw;
+      margin: 0 auto;
+      padding: 0;
+
+    }
+  .Hotspot {
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-family: Futura, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      max-width: 128px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  </style>
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <div class="canv">
+          <model-viewer class="mainmodel" poster="" id="reveal" loading="eager" shadow-intensity="0" auto-rotate="" src="assets/hlogo.gltf" alt="Salvi" disable-zoom="" autoplay="" camera-orbit="-0.7869deg 86.02deg auto" camera-controls="" ar="" ar-modes="webxr scene-viewer quick-look" exposure=".7" ar-status="not-presenting">
+
+        
+
+</model-viewer>
+        
+        <h2>WELCOME TO<br />HURAKAN LABS</h2>
+    </body>
+
     we build things.
+    
 </html>
